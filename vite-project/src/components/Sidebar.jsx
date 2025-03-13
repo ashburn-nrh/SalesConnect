@@ -41,14 +41,20 @@ const Sidebar = ({ isCollapsed, toggleSidebar }) => {
         <li className={`flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer
           ${location.pathname === "/companies" && "bg-gray-200"}`} onClick={() => handleItemClick("/Companies")
         }>
+
+
           <CiHospital1 size={22} /> {!isCollapsed && <span>Companies</span>}
         </li>
         <li className={`flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer
           ${location.pathname === "/Lists" && "bg-gray-200"}`} onClick={() => handleItemClick("/Lists")
         }>
+
+
           <CiBoxList size={22} /> {!isCollapsed && <span>Lists</span>}
         </li>
-        <li className="flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer">
+        <li className={`flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer ${
+          location.pathname === "/Dataenrichment" && "bg-gray-200"
+          }`} onClick={()=> handleItemClick("/Dataenrichment")}>
           <CiDatabase size={22} /> {!isCollapsed && <span>Data Enrichment</span>}
         </li>
         <li className="flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer">
