@@ -12,6 +12,7 @@ import People from "./pages/people";
 import Companies from "./pages/companies";
 import List from "./pages/list";
 import Dataenrichment from "./pages/dataenrichment";
+import Email from "./pages/email";
 import { Theme } from "@radix-ui/themes";
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/companies" element={<Companies />}/>
         <Route path='/lists' element={<List/>}/>
         <Route path='/dataenrichment' element={<Dataenrichment/>}/>
+        <Route path='/email' element={<Email/>}/>
       </Routes>
     </Layout>
     </Theme>

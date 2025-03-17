@@ -60,7 +60,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar }) => {
         <li className="flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer">
           <CiPaperplane size={22} /> {!isCollapsed && <span>Sequences</span>}
         </li>
-        <li className="flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer">
+        <li className={`flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer ${location.pathname === "/email" && "bg-gray-200"}`} onClick={()=> handleItemClick("/email")}>
           <CiMail size={22} /> {!isCollapsed && <span>Emails</span>}
         </li>
         <li className="flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer">
