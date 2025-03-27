@@ -14,6 +14,7 @@ import List from "./pages/list";
 import Dataenrichment from "./pages/dataenrichment";
 import Email from "./pages/email";
 import { Theme } from "@radix-ui/themes";
+import Deals from "./pages/deals";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path='/lists' element={<List/>}/>
         <Route path='/dataenrichment' element={<Dataenrichment/>}/>
         <Route path='/email' element={<Email/>}/>
+        <Route path='/deals' element={<Deals/>}/>
       </Routes>
     </Layout>
     </Theme>
