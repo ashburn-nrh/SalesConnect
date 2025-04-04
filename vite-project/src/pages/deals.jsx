@@ -4,8 +4,9 @@ import { Search, Filter, Plus } from "lucide-react";
 
 const Deals = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <header className="flex justify-between items-center mb-6">
+    <div className="min-h-screen bg-gray-100 p-2">
+      <div className=" bg-white shadow p-6 h-16">
+      <header className="flex justify-between items-center mb-6 ">
         <h1 className="text-2xl font-bold">Deals</h1>
         <div className="flex gap-2">
           <Button variant="outline">
@@ -19,6 +20,7 @@ const Deals = () => {
           </Button>
         </div>
       </header>
+      </div>
 
       <main className="flex justify-center items-center h-[70vh]">
         <Card className="max-w-md text-center">

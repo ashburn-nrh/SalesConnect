@@ -66,13 +66,13 @@ const Sidebar = ({ isCollapsed, toggleSidebar }) => {
         <li className="flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer">
           <CiPhone size={22} /> {!isCollapsed && <span>Calls</span>}
         </li>
-        <li className="flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer">
+        <li className={`flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer ${location.pathname === "/meetings" && "bg-gray-200"}`} onClick={()=> handleItemClick("/meetings")}>
           <CiCalendarDate size={22} /> {!isCollapsed && <span>Meetings</span>}
         </li>
         <li className="flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer">
           <CiChat1 size={22} /> {!isCollapsed && <span>Conversations</span>}
         </li>
-        <li className="flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer">
+        <li className={`flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer ${location.pathname === "/deals" && "bg-gray-200"}`} onClick={()=> handleItemClick("/deals")}>
           <CiBadgeDollar size={22} /> {!isCollapsed && <span>Deals</span>}
         </li>
         <li className="flex items-center space-x-2 hover:bg-gray-200 rounded-lg px-2 py-1 cursor-pointer">
